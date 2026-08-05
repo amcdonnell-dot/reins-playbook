@@ -1,6 +1,6 @@
 # reins-playbook: Rein In Your AI Dev Fleet
 
-A three-step workflow to inventory, remediate, and continuously guard the standing permissions your AI coding agents accumulate. It chains the [Reins MCP server](https://github.com/<GITHUB_USERNAME>/reins) and the [Reins Audit skill](https://github.com/<GITHUB_USERNAME>/reins-skill) into one loop: **audit → remediate → enforce → watch**.
+A three-step workflow to inventory, remediate, and continuously guard the standing permissions your AI coding agents accumulate. It chains the [Reins MCP server](https://github.com/amcdonnell-dot/reins) and the [Reins Audit skill](https://github.com/amcdonnell-dot/reins-skill) into one loop: **audit → remediate → enforce → watch**.
 
 ## Why a playbook and not just the tools
 
@@ -35,8 +35,8 @@ See `PLAYBOOK.md` for the condensed step table.
 
 ## Prerequisites
 
-- The [Reins MCP server](https://github.com/<GITHUB_USERNAME>/reins) connected to Claude Code.
-- The [Reins Audit skill](https://github.com/<GITHUB_USERNAME>/reins-skill) installed (optional if you're comfortable driving `reins_revoke` yourself; the skill exists to make step 2 conversational rather than manual).
+- The [Reins MCP server](https://github.com/amcdonnell-dot/reins) connected to Claude Code.
+- The [Reins Audit skill](https://github.com/amcdonnell-dot/reins-skill) installed (optional if you're comfortable driving `reins_revoke` yourself; the skill exists to make step 2 conversational rather than manual).
 
 ## What it outputs
 
@@ -44,7 +44,7 @@ A clean standing-permission baseline, a `permissions.deny` guardrail covering wh
 
 ## Known limitations
 
-This is a workflow description, not new code — every claim about behavior here is a claim about the Reins MCP server and skill, and their limitations apply here too (pattern-based classification, point-in-time audits between drift checks, no ability to intercept a running agent mid-session). See the [Reins MCP server README](https://github.com/<GITHUB_USERNAME>/reins#known-limitations) for the full list.
+This is a workflow description, not new code — every claim about behavior here is a claim about the Reins MCP server and skill, and their limitations apply here too (pattern-based classification, point-in-time audits between drift checks, no ability to intercept a running agent mid-session). See the [Reins MCP server README](https://github.com/amcdonnell-dot/reins#known-limitations) for the full list.
 
 ## Security
 
